@@ -1,18 +1,23 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <title>Vacunas</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/vacunas.css">
-  </head>
-  <body>
-      <header>Título</header>
-      <!-- <div class="container-fluid">
+<head>
+  <title>Vacunas</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="js/all.min.js"></script>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/vacunas.css">
+</head>
+
+<body>
+  <header>Título</header>
+  <!-- <div class="container-fluid">
           <div class="row">
               <div class="col-md-3 calculadora">Calculadora</div>
               <div class="col-md-5 vacunas">Vacunas</div>
@@ -20,103 +25,326 @@
           </div>
       </div> -->
 
-      <div class="container-fluid">
-            <div class="row">
-                    <div class="col-md-3 col-6">
-                      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link" id="v-pills-calculadora-tab" data-toggle="pill" href="#v-pills-calculadora" role="tab" aria-controls="v-pills-calculadora" aria-selected="true">Calculadora</a>
-                        <a class="nav-link" id="v-pills-ninios-tab" data-toggle="pill" href="#v-pills-ninios" role="tab" aria-controls="v-pills-ninios" aria-selected="false">Niños</a>
-                        <a class="nav-link" id="v-pills-adolescentes-tab" data-toggle="pill" href="#v-pills-adolescentes" role="tab" aria-controls="v-pills-adolescentes" aria-selected="false">Adolescentes</a>
-                        <a class="nav-link" id="v-pills-mujeres-tab" data-toggle="pill" href="#v-pills-mujeres" role="tab" aria-controls="v-pills-mujeres" aria-selected="false">Mujeres</a>
-                        <a class="nav-link" id="v-pills-hombres-tab" data-toggle="pill" href="#v-pills-hombres" role="tab" aria-controls="v-pills-hombres" aria-selected="false">Hombres</a>
-                        <a class="nav-link active" id="v-pills-mayores-tab" data-toggle="pill" href="#v-pills-mayores" role="tab" aria-controls="v-pills-mayores" aria-selected="false">Mayores</a>
-                      </div>
-                      <hr>
-                      <div class="text-center">
-                          <h5>Vacunas</h5>
-                          <div class="d-flex flex-column">
-                                <div class="mt-3 btn btn-outline-primary rounded-pill">BCG</div>
-                                <div class="mt-3 btn btn-primary rounded-pill">TD</div>
-                                <div class="mt-3 btn btn-outline-primary rounded-pill">Influenza</div>
-                          </div>
-                          <hr>
-                          <h5>Desarrollo</h5>
-                          <p>lorem</p>
-                      </div>
-                     
-                      
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-6">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link" id="v-pills-calculadora-tab" data-toggle="pill" href="#v-pills-calculadora" role="tab"
+            aria-controls="v-pills-calculadora" aria-selected="true"><i
+              class="fas fa-laugh-squint mr-2"></i>Calculadora</a>
+          <a class="nav-link" id="v-pills-ninios-tab" data-toggle="pill" href="#v-pills-ninios" role="tab"
+            aria-controls="v-pills-ninios" aria-selected="false"><i class="fas fa-laugh-squint mr-2"></i>Niños<span>0 a
+              9 años</span></a>
+          <a class="nav-link" id="v-pills-adolescentes-tab" data-toggle="pill" href="#v-pills-adolescentes" role="tab"
+            aria-controls="v-pills-adolescentes" aria-selected="false"><i class="far fa-angry mr-2"></i>
+            Adolescentes<span>10 a 19 años</span></a>
+          <a class="nav-link" id="v-pills-mujeres-tab" data-toggle="pill" href="#v-pills-mujeres" role="tab"
+            aria-controls="v-pills-mujeres" aria-selected="false"><i
+              class="fas fa-meh-rolling-eyes mr-2"></i>Mujeres<span>20 a 59 años</span> </a>
+          <a class="nav-link" id="v-pills-hombres-tab" data-toggle="pill" href="#v-pills-hombres" role="tab"
+            aria-controls="v-pills-hombres" aria-selected="false"><i
+              class="fas fa-laugh-squint mr-2"></i>Hombres<span>20 a 59 años</span></a>
+          <a class="nav-link active" id="v-pills-mayores-tab" data-toggle="pill" href="#v-pills-mayores" role="tab"
+            aria-controls="v-pills-mayores" aria-selected="false"><i
+              class="fas fa-laugh-squint mr-2"></i>Mayores<span>60 años y más</span></a>
+        </div>
+        <hr>
+        <div class="text-center">
+          <h5>Vacunas</h5>
+          <div class="d-flex flex-column">
+            <div id="bcg" class="mt-3 btn btn-outline-primary rounded-pill">BCG</div>
+            <div id="dt" class="mt-3 btn btn-primary rounded-pill">TD</div>
+            <div id="influenza" class="mt-3 btn btn-outline-primary rounded-pill">Influenza</div>
+          </div>
+          <hr>
+          <h5>Desarrollo</h5>
+          <p>lorem</p>
+        </div>
 
+
+
+      </div>
+      <div class="col-md-9 col-6">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade" id="v-pills-calculadora" role="tabpanel" aria-labelledby="v-pills-calculadora-tab">
+            Calculadora
+          </div>
+          <div class="tab-pane fade" id="v-pills-ninios" role="tabpanel" aria-labelledby="v-pills-ninios-tab">Niños
+          </div>
+          <div class="tab-pane fade" id="v-pills-adolescentes" role="tabpanel"
+            aria-labelledby="v-pills-adolescentes-tab">Adolescentes</div>
+          <div class="tab-pane fade" id="v-pills-mujeres" role="tabpanel" aria-labelledby="v-pills-mujeres-tab">Mujeres
+          </div>
+          <div class="tab-pane fade" id="v-pills-hombres" role="tabpanel" aria-labelledby="v-pills-hombres-tab">Hombres
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-mayores" role="tabpanel"
+            aria-labelledby="v-pills-mayores-tab">
+            <div class="row dt">
+              <div class="col-md-6 acordion">
+                <h3>DT tétanos difteria</h3>
+                <div class="accordion" id="infoCollapse">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          <i class="fa fa-phone" aria-hidden="true"></i> Enfermedad que previene
+                        </button>
+                      </h2>
                     </div>
-                    <div class="col-md-9 col-6">
-                      <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade" id="v-pills-calculadora" role="tabpanel" aria-labelledby="v-pills-calculadora-tab">
-                            Calculadora
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                      data-parent="#infoCollapse">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <i class="fas fa-search-plus"></i> Dosis, edad y frecuencia
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#infoCollapse">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <i class="fas fa-search-plus"></i> Reacciones secundarias
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#infoCollapse">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6"><img src="img/animacion.png" alt="" class="w-100"></div>
+            </div>
+
+            <div class="row bcg">
+              <div class="col-md-6 acordion">
+                <h3>BCG</h3>
+                <div class="accordion" id="infoCollapse">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          <i class="fa fa-phone" aria-hidden="true"></i> Enfermedad que previene
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                      data-parent="#infoCollapse">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <i class="fas fa-search-plus"></i> Dosis, edad y frecuencia
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#infoCollapse">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <i class="fas fa-search-plus"></i> Reacciones secundarias
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#infoCollapse">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6"><img src="img/animacion.png" alt="" class="w-100"></div>
+            </div>
+
+            <div class="row influenza">
+                <div class="col-md-6 acordion">
+                  <h3>influenza</h3>
+                  <div class="accordion" id="infoCollapse">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fa fa-phone" aria-hidden="true"></i> Enfermedad que previene
+                          </button>
+                        </h2>
+                      </div>
+  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#infoCollapse">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                          3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                          laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                          coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                          anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                          of them accusamus labore sustainable VHS.
                         </div>
-                        <div class="tab-pane fade" id="v-pills-ninios" role="tabpanel" aria-labelledby="v-pills-ninios-tab">Niños</div>
-                        <div class="tab-pane fade" id="v-pills-adolescentes" role="tabpanel" aria-labelledby="v-pills-adolescentes-tab">Adolescentes</div>
-                        <div class="tab-pane fade" id="v-pills-mujeres" role="tabpanel" aria-labelledby="v-pills-mujeres-tab">Mujeres</div>
-                        <div class="tab-pane fade" id="v-pills-hombres" role="tabpanel" aria-labelledby="v-pills-hombres-tab">Hombres</div>
-                        <div class="tab-pane fade show active" id="v-pills-mayores" role="tabpanel" aria-labelledby="v-pills-mayores-tab">
-                                <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="accordion" id="accordionExample">
-                                                <div class="card">
-                                                  <div class="card-header" id="headingOne">
-                                                    <h2 class="mb-0">
-                                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                        Enfermedad que previene
-                                                      </button>
-                                                    </h2>
-                                                  </div>
-                                              
-                                                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="card">
-                                                  <div class="card-header" id="headingTwo">
-                                                    <h2 class="mb-0">
-                                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                        Dosis, edad y frecuencia
-                                                      </button>
-                                                    </h2>
-                                                  </div>
-                                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="card">
-                                                  <div class="card-header" id="headingThree">
-                                                    <h2 class="mb-0">
-                                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Reacciones secundarias
-                                                      </button>
-                                                    </h2>
-                                                  </div>
-                                                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div></div>
-                                        <div class="col-md-6"><img src="img/animacion.png" alt="" class="img-fluid"></div>
-                                </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-search-plus"></i> Dosis, edad y frecuencia
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#infoCollapse">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                          3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                          laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                          coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                          anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                          of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="fas fa-search-plus"></i> Reacciones secundarias
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#infoCollapse">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                          3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                          laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                          coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                          anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                          occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                          of them accusamus labore sustainable VHS.
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="col-md-6"><img src="img/animacion.png" alt="" class="w-100"></div>
+              </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
 
-     <footer></footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <footer></footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    /* $('#infoCollapse').collapse({
+      toggle: true
+    }); */
+
+// $('.card-header').collapse('hide');
+
+    /* $('#infoCollapse').on('hidden.bs.collapse', function () {
+      prompt('holi;');
+    }) */
+  </script>
+
+  <script>
+    $(document).ready(function () {
+
+      $("#dt").click(function () {
+        $(".dt").toggle();
+      });
+      $("#bcg").click(function () {
+        $(".bcg").toggle();
+      });
+      $("#influenza").click(function () {
+        $(".influenza").toggle();
+      });
+    });
+  </script>
+</body>
+
 </html>

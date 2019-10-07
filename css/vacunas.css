@@ -1,10 +1,87 @@
 header {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #464646;
 }
 
 .vacunas {
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  border-left: 1px solid #464646;
+  border-right: 1px solid #464646;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #464646;
+  background: transparent;
+  border-left: 5px solid green;
+  border-radius: 0;
+}
+
+.acordion h3 {
+  background: green !important;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+}
+
+.nav-pills .nav-link {
+  color: #464646;
+  margin-left: 15px;
+  border-left: 5px solid transparent;
+  margin-left: -15px;
+  line-height: 0.9rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+.nav-pills .nav-link span {
+  display: block;
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #939393;
+}
+
+.nav-link {
+  border-radius: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+}
+.nav-link:hover {
+  border-left: 5px solid green;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+}
+
+.btn-primary {
+  background-color: green !important;
+  border-color: green !important;
+}
+
+.btn-outline-primary {
+  border-color: green !important;
+  color: inherit;
+  color: green !important;
+}
+.btn-outline-primary:hover {
+  background-color: green !important;
+  border-color: green !important;
+  color: white !important;
+}
+
+.accordion .card .card-header {
+  background: white;
+}
+.accordion .card .card-header .btn-link {
+  color: #464646;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+}
+.accordion .card .card-body {
+  background-color: #dfdfdf;
+  font-size: 80%;
 }
 
 /*# sourceMappingURL=vacunas.css.map */

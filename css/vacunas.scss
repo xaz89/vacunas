@@ -1,8 +1,112 @@
+$primary: green!important;
+$gray: #464646;
+
 header {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid $gray;
 }
 
 .vacunas {
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
+    border-left: 1px solid $gray;
+    border-right: 1px solid $gray;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: $gray;
+    background: transparent;
+    border-left: 5px solid green;
+    border-radius: 0;
+
+    
+}
+
+.acordion {
+
+    h3 {
+        background: $primary;
+        color: white;
+        width: 100%;
+        padding: 1rem;
+    }
+   
+}
+
+
+.nav-pills .nav-link {
+    color: $gray;
+    margin-left: 15px;
+    border-left: 5px solid transparent;
+    margin-left: -15px;
+    line-height: 0.9rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+
+    span {
+        display: block;
+        width: 100%;
+        margin-left: 1.5rem;
+        margin-top: 0.3rem;
+        font-size: 0.8rem;
+        color: lighten($color: $gray, $amount: 30%);
+        
+    }
+}
+
+
+
+.nav-link {
+    border-radius: none;
+    -webkit-border-radius: none;
+    -moz-border-radius: none;
+    -ms-border-radius: none;
+    -o-border-radius: none;
+    &:hover {
+        border-left: 5px solid green;
+        -webkit-border-radius: none;
+        -moz-border-radius: none;
+        -ms-border-radius: none;
+        -o-border-radius: none;
+    }
+   
+}
+
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.btn-outline-primary {
+    border-color: $primary;
+    color: inherit; 
+    color: $primary; 
+
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: white!important;
+    }
+}
+
+.accordion{
+    .card {
+        .card-header{
+            background: white;
+           .btn-link {
+            color: $gray;
+            width: 100%;
+    text-align: left;
+    text-decoration: none;
+    
+       }
+        }
+
+        .card-body {
+            background-color: lighten($color: $gray, $amount: 60%);
+            font-size: 80%;
+        }
+    }
+}
+
+.bcg {
+    
 }
